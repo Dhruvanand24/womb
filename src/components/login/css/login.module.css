@@ -1,0 +1,77 @@
+/* Apply some basic styling to the container */
+.mainContainer {
+    display: flex;
+    height: 100%; /* Set the desired height */
+
+  }
+  
+  /* Style for the left div */
+  .left {
+    flex: 1; /* Takes remaining space */
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    
+  }
+  
+  /* Style for the right div */
+  .right {
+    flex: 0 0 62.11%; /* Takes 65% of the container width */
+    position: relative; /* Create a positioning context for absolute positioning of the image */
+    user-select: none;
+}
+  
+  /* Style for the image inside the right div */
+  .right img {
+    width: 100%; /* Make the image cover the whole right div */
+    height: 100%; /* Make the image cover the whole right div */
+    object-fit: cover; /* Maintain the aspect ratio and cover the entire div */
+  }
+ 
+  
+  .images {
+    height: 33vh;
+    position: relative;
+    user-select: none;
+   
+
+  }
+  .flower {
+    position: absolute;
+    top: 56px;
+    left: 33px;
+    border: 1px solid black;
+    box-shadow: 0 4 4 0;
+  }
+  .flower img {
+      width: 218px;
+      height: 198px;
+  }
+  .logo {
+    
+    position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  }
+  .logo img {
+    width:186px;
+    height:224px;
+  }
+  .form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .form h1 {
+    font-size: 25px;
+    font-weight: 900;
+    text-shadow: 0px 4px 11px rgba(0,0,0,1);
+    letter-spacing: -2px;
+
+
+    
+  }
+  
+ 

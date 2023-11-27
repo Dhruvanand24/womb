@@ -1,0 +1,57 @@
+.inputcontainer {
+    display: flex;
+    flex-direction: column;
+    max-width: 100%; /* Set the desired maximum width */
+  
+  }
+  
+  .inputgroup {
+    display: flex;
+    align-items: center;
+    width: 400px;
+    height: 60px;
+    margin-top: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    overflow: hidden;
+  }
+  
+  .icon {
+    padding: 10px;
+     /* Background color for the icon area */
+   
+  }
+  
+  .icon:last-child {
+    border: none; /* Remove border for the last icon in the input group */
+    cursor: pointer; /* Add pointer cursor for the eye icon */
+    margin-right: 10px;
+  }
+  
+  input {
+    flex: 1;
+    padding: 10px;
+    border: none;
+    outline: none;
+  }
+
+  .forgetPassword {
+    margin-top: 10px; /* Adjust the margin-top to position the button below the password container */
+    color: #0A3055;
+    cursor: pointer;
+    
+  }
+
+  .loginbtn{
+    margin-top: 50px;
+    width: 400px;
+    height: 48px;
+    background-color: #FF6666;
+    color: white;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+  }
