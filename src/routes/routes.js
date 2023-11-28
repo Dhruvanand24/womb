@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import Login from '../components/login/login';
 import Admin from '../components/admin/admin';
 import {
@@ -10,13 +10,13 @@ import {
 import Roles from '../components/roles/roles';
 
 const MyRoutes = () => {
-    
+
   return (
     <Router>
     <div className="App">
     <Routes>
           <Route path="/"
-            element={window.localStorage.getItem("isLoggedIn")==="true" ? (<Navigate to="/admin" />) : (<Login />)} />
+            element={(window.localStorage.getItem("isLoggedIn")==="true")?(<Navigate to="/admin" />):<Login /> } />
          
           <Route
             path="/admin"
