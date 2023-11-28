@@ -4,8 +4,12 @@ import { useNavigate } from 'react-router-dom';
 
 const Sidebar = (props) => {
     const navigate = useNavigate();
-    const logout = async ()=> {
+    const logout =  ()=> {
+      console.log("entered logout function");
+      console.log(window.localStorage.getItem("isLoggedIn"));
         window.localStorage.setItem("isLoggedIn", "false")
+        console.log(window.localStorage.getItem("isLoggedIn"));
+        
         navigate("/");
 
     }
