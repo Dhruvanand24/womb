@@ -1,0 +1,37 @@
+.header {
+    display: flex;
+    
+    width: 100%;
+    border-bottom: 1px solid #0A3055;
+}
+.eachitem {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    font-weight: bold;
+    width: 250px;
+    margin-left: 20px;
+    margin-right: 10px;
+
+}
+.eachitem p {
+    margin-left: 10px;
+    color: #0A3055;
+
+}
+.eachitemrole {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    font-weight: bold;
+    width: 500px;
+    margin-left: 20px;
+    margin-right: 10px;
+    overflow: hidden;
+
+}
+.eachitemrole p {
+    margin-left: 10px;
+    color: #0A3055;
+
+}

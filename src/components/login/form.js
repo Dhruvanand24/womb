@@ -1,7 +1,6 @@
 import React, {useState} from 'react'
 import styles from "./css/form.module.css"
 import auth from "./authentication.js"
-import Admin from '../admin/admin.js'
 import { useNavigate } from 'react-router-dom'
 
 const Form = () => {

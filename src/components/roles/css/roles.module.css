@@ -1,0 +1,7 @@
+.right {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    flex-direction: column;
+    margin-left: 15%;
+}

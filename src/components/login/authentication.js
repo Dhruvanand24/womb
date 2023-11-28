@@ -1,6 +1,6 @@
 const auth = (useremail, userpassword) => {
-    const validEmail = "dhruv@ihd.in";
-    const validPassword = "dhruv@ihd";
+    const validEmail = process.env.REACT_APP_EMAIL;
+    const validPassword = process.env.REACT_APP_PASSWORD;
     
     try {
       if (useremail === validEmail) {

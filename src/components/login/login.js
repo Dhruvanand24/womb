@@ -1,14 +1,9 @@
-import React, { useState }from 'react'
+import React from 'react'
 import styles from "./css/login.module.css";
 import Form from "./form.js";
 const Login = () => {
 
-  const [showPassword, setShowPassword] = useState(false);
-
-  const togglePasswordVisibility = () => {
-    setShowPassword(!showPassword);
-  };
- 
+  
 
   
   return (

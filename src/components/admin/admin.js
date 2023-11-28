@@ -1,17 +1,20 @@
 import React from 'react'
-import { useNavigate } from 'react-router-dom';
 import Sidebar from '../Sidebar';
+import Banner from '../Banner';
+import styles from './css/admin.module.css';
+import Searchbar from '../Searchbar';
+import Table from '../Table';
 
 const Admin = () => {
-    const navigate = useNavigate();
-    const logout = ()=> {
-        window.localStorage.setItem("isLoggedIn", "false");
-        navigate("/");
 
-    }
   return (
-    <div>
-      <Sidebar/>
+    <div style={{display: "flex"}}>
+      <Sidebar type="Admin"/>
+      <div className={styles.right}>
+      <Banner type="Admin" />
+      <Searchbar />
+      <Table type="Admin"/>
+      </div>
     </div>
   )
 }

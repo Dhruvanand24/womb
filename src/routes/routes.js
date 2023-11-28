@@ -7,19 +7,25 @@ import {
     Routes,
     Navigate
   } from "react-router-dom";
+import Roles from '../components/roles/roles';
 
 const MyRoutes = () => {
-    const isLoggedIn = window.localStorage.getItem('isLoggedIn') === 'true';
+    
   return (
     <Router>
     <div className="App">
     <Routes>
           <Route path="/"
-            element={isLoggedIn ? <Navigate to="/admin" /> : <Login />} />
-          {/* <Route path="/admin" element={<Admin />} /> */}
+            element={window.localStorage.getItem("isLoggedIn")==="true" ? (<Navigate to="/admin" />) : (<Login />)} />
+         
           <Route
             path="/admin"
             element={<Admin />}
+          />
+          
+          <Route
+            path="/rolemanagement"
+            element={<Roles />}
           />
         
         </Routes>

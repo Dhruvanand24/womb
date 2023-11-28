@@ -2,17 +2,23 @@ import React, { useState } from 'react'
 import styles from "./css/Sidebar.module.css";
 import { useNavigate } from 'react-router-dom';
 
-const Sidebar = () => {
+const Sidebar = (props) => {
     const navigate = useNavigate();
-    const logout = ()=> {
-        window.localStorage.setItem("isLoggedIn", "false");
+    const logout = async ()=> {
+        window.localStorage.setItem("isLoggedIn", "false")
         navigate("/");
 
     }
-    const [selectedOption, setSelectedOption] = useState(null);
+    const [selectedOption, setSelectedOption] = useState(props.type);
 
     const handleOptionClick = (option) => {
       setSelectedOption(option);
+      if(option==="Role"){
+        navigate("/rolemanagement");
+      }
+      else if(option==="Admin"){
+        navigate("/admin");
+      }
     };
 
   return (
