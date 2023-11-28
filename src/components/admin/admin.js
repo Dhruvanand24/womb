@@ -8,7 +8,7 @@ import Table from '../Table';
 const Admin = () => {
 
   return (
-    <div style={{display: "flex"}}>
+    <div className={styles.container}>
       <Sidebar type="Admin"/>
       <div className={styles.right}>
       <Banner type="Admin" />

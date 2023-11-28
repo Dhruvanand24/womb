@@ -9,7 +9,7 @@ import styles from "./css/roles.module.css"
 const Roles = () => {
     
   return (
-    <div style={{display: "flex"}}>
+    <div className={styles.container}>
       <Sidebar type="Role"/>
       <div className={styles.right}>
       <Banner type="Role"/>
